@@ -1,0 +1,164 @@
+/*media queries*/
+
+/*GENERICOS - TODAS LAS PAGINAS*/
+
+       /*CABECERA*/
+
+@media (max-width:400px){
+    
+header{
+      display: flex;
+    flex-direction:row-reverse;
+    width: 95%;
+    margin-left:16px ;
+  }
+  
+  h1{
+    font-size: 28px; 
+    padding-right:10px ;	
+  }
+      
+.portada{
+    margin-left:50px ;
+    
+  }
+
+    /*REDES DE TODAS LAS PAGINAS*/
+
+div .social img {
+  width: 100px;
+}
+
+
+/*FORMULARIO SUSCRIPCION*/
+.suscripcion label {
+  font-size: 15px;
+  text-align: center;
+
+}
+
+footer{
+  display:flex ;
+  justify-content: center;
+	margin: 50px;
+	font-size: 15px;
+	text-align: center;
+}
+
+
+ /*PAGINA INDEX*/
+
+    /*PRESENTACION*/
+
+main{
+      margin: 5px;
+      padding: 5px;
+    }
+    
+h2{
+    font-size: 20px;}
+
+main img {
+  width: 100px;
+}
+
+   /*frases libros*/
+.carousel-item img {
+  width: 80%;
+}
+
+/*IMAGENES DE LIBROS*/
+
+h3{
+	font-size: 30px;
+
+	}
+
+/*ULTIMAS NOTICIAS*/
+
+.noticias {  
+	  margin: 5px;
+  }
+
+  .ultimasnovedades { 
+    font-size: 20px;
+ }
+  
+  .imagennoticia img {
+    width: 120px;
+}
+
+.imagennoticia {
+  margin: 3px;
+  padding-left: 2px;}
+
+
+  .nuevolibro { 
+	font-size: 20px;
+}
+  
+
+  .sinopsissumergidos { 
+
+	font-size: 10px; 
+	padding-right: 2px;
+}
+  
+  
+  .dato1 {  
+font-size: 8px;
+
+}
+  
+  .dato2 {
+	font-size: 8px; 
+
+}
+
+  .paradescargar { grid-area: paradescargar; }
+  
+     /*PAGINA SOBRE MI*/
+
+.fotomia {
+
+	width: 100px;
+
+   }
+
+.sobremi{
+	font-size: 10px;
+   }
+
+.todosobremi{
+	width: 300px;
+}
+
+/*PAGINA MIS LIBROS*/
+
+.containerlibros {  
+	border: dashed 2px;
+	margin: 5px;
+  }
+  
+.titulolibro { 
+	font-size: 30px;
+	padding: 5px;
+  text-align: left;
+  }
+
+  
+.fotolibros img { 
+width: 100px;
+  }
+  
+.sinopsislibros { 
+	font-size: 10px;
+	padding-right: 5px;
+  padding-bottom: 5px;
+}
+  /*PAGINA contactos*/
+.col img {
+  width: 50px;
+}
+
+  }
