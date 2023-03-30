@@ -6,6 +6,7 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	
 }
 
      /*GENERICOS - TODAS LAS PAGINAS*/
@@ -30,7 +31,7 @@ h1{
 	justify-content:flex-end;
 	align-items: center;
 	font-family: 'Amatic SC', cursive;
-    font-size: 120px; 	
+    font-size: 5.5em; 	
 }
     
 .portada{
@@ -58,7 +59,9 @@ h1{
   }
 h2
 {font-family: 'Amatic SC', cursive;
-font-size: 80px;}
+font-size: 1.6em;
+padding: 30px;}
+
 
 
 /*REDES DE TODAS LAS PAGINAS*/
@@ -80,7 +83,7 @@ font-size: 80px;}
 footer{
 	margin: 50px;
 	font-family:  Helvetica cursive;
-	font-size: 15px;
+	font-size: 1.4em;
 	text-align: center;
 }
 
@@ -98,113 +101,77 @@ footer{
 
 h3{
 	font-family: 'Amatic SC', cursive;
-	font-size: 80px;
-	margin: 50px;
+	font-size: 1.8em;
+	margin: 10px;
 	padding: 20px;
 	text-align: center;
 	}
 
 
+
 	
 /*ULTIMAS NOTICIAS*/
 
-.noticias {  
-	display: grid;
-	grid-template-columns: 1.3fr 0.7fr 1fr;
-	grid-template-rows: 0.5fr 0.6fr 2.3fr 0.6fr;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas:
-	  "ultimasnovedades ultimasnovedades ultimasnovedades"
-	  "imagennoticia nuevolibro nuevolibro"
-	  "imagennoticia datos datos"
-	  "paradescargar paradescargar paradescargar";
-	  border: dashed 2px;
-	  margin: 30px;
-	  background-color: white;
-  }
-  
-  .ultimasnovedades { 
-	grid-area: ultimasnovedades;
-    font-size: 80px;
- }
-  
-  .imagennoticia { grid-area: imagennoticia; 
-    margin: 30px;
-    padding-left: 80px;}
-
-  
-  .nuevolibro { grid-area: nuevolibro; 
-	font-size: 60px;
-	color: red
-}
-  
-  .datos {  display: grid;
-	grid-template-columns: 1fr 1fr 1.4fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas:
-	  "sinopsissumergidos sinopsissumergidos sinopsissumergidos"
-	  "sinopsissumergidos sinopsissumergidos sinopsissumergidos"
-	  ". . pequeñosdatos";
-	grid-area: datos;
-  }
-  
-  .sinopsissumergidos { 
-	grid-area: sinopsissumergidos;
-	font-size: 30px; 
-	padding-right: 30px;
-}
-  
-  .pequeñosdatos {  display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas:
-	  "dato1 dato1 dato1"
-	  "dato2 dato2 dato2";
-	grid-area: pequeñosdatos;
-  }
-  
-  .dato1 { grid-area: dato1; 
-font-size: 20px;
-padding-top: 20px;
-font-weight: bold;
-}
-  
-  .dato2 { grid-area: dato2;
-	font-size: 20px; 
-	font-weight: bold;
+.noticias  {
+	border: dashed 2px;
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	background-color: white;
+	width: 94%;
 }
 
-  .paradescargar { grid-area: paradescargar; }
-  
-  
- .btn{
-	background-color: rgb(0, 0, 0);
-	margin: 10px;
- }
+.novedades  {
+	font-size: 1.8em;
+	padding: 5px;
+}
+
+.nuevo  {
+	font-size: 1.4em;
+	padding: 5px;
+	color: red;
+}
+
+.sinopsis {
+	font-size: 1.4em;
+	padding: 5px;
+}
+
+.imagenn {
+	padding: 20px;
+	width: 90%;
+}
+
+
+.btn-custom a {
+    text-decoration: none;
+		
+}
+
+.irarriba {
+	display: flex;
+	justify-content: center;
+}
 
    /*PAGINA SOBRE MI*/
 
-section.gridsobremi{
+.sobremi{
 	border: dashed 3px;
 	background-color: white;
 	margin: 10px;
+	width: 90%;
    }
 
-.fotomia {
-	width: 500px;
-	margin: 3%;
-	border: solid #f5e187 10px;
-   }
+.fotomia{
+	
+	margin: 10px;
+}
 
-.sobremi{
+.mipresentacion{
 	font-family:  sans-serif;
-	font-size: 30px;
+	font-size: 1.8em;
 	margin: 5%;
+	padding: 5px;
    }
 
 .todosobremi{
@@ -267,7 +234,7 @@ section.gridsobremi{
 }
 
   /*PAGINA RESEÑAS*/
-.col :hover {
+ .reseña :hover {
 	border-radius:50%;
 	-webkit-border-radius:50%;
 	box-shadow: 0px 0px 15px 15px #96897f;
@@ -295,5 +262,152 @@ label{
 .comentariodatos{
 	padding: 20px;
 }
+
+
+/*media queries*/
+
+/*GENERICOS - TODAS LAS PAGINAS*/
+
+       /*CABECERA*/
+
+	   @media (max-width:1000px)
+	   {
+    
+		  
+		  h1{
+			font-size: 30px; 
+		   padding: 30px;
+		   text-align: center;
+			
+		  }
+			  
+		.portada{
+			display: none;
+			
+		  }
+		
+			/*REDES DE TODAS LAS PAGINAS*/
+		
+		div .social img {
+		  width: 80px;
+		}
+		
+		
+		/*FORMULARIO SUSCRIPCION*/
+		.suscripcion label {
+		  font-size: 1.2em;
+		  text-align: center;
+		
+		}
+		
+		footer{
+		  display:flex ;
+		  justify-content: center;
+			margin: 50px;
+			font-size: 1.2em;
+			text-align: center;
+		}
+		
+		
+		 /*PAGINA INDEX*/
+		
+			/*PRESENTACION*/
+		
+			main{
+				margin: 1px;
+				padding: 1px;
+				
+			  }
+			  
+		  h2{
+			  font-size: 1em;}
+		  
+		  main img {
+			width: 40%;
+		  }
+		  
+		   /*frases libros*/
+		.carousel-item img {
+		  width: 80%;
+		}
+		
+		/*IMAGENES DE LIBROS*/
+		
+		h3{
+			font-size: 1.2em;
+		
+			}
+
+		.imglibros {
+				width: 60%;
+			}
+		
+		/*ULTIMAS NOTICIAS*/
+		.noticias  {
+			border: dashed 2px;
+			margin-top: 40px;
+			margin-left: 2px;
+			margin-right: 2px;
+			background-color: white;
+			width: 94%;
+		}
+		
+		.imagenn {
+			display: flex;
+			justify-content: center;
+			width: 40%;
+		}
+		  
+			 /*PAGINA SOBRE MI*/
+		
+		.fotomia {
+		
+			width: 50%;
+		
+		   }
+		
+		.sobremi{
+			font-size: 10px;
+		   }
+		
+		.todosobremi{
+			width: 300px;
+		}
+		
+		/*PAGINA MIS LIBROS*/
+		
+		.containerlibros {  
+			border: dashed 2px;
+			margin: 5px;
+		  }
+		  
+		.titulolibro { 
+			font-size: 30px;
+			padding: 5px;
+		  text-align: left;
+		  }
+		
+		  
+		.fotolibros img { 
+		width: 100px;
+		  }
+		  
+		.sinopsislibros { 
+			font-size: 10px;
+			padding-right: 5px;
+		  padding-bottom: 5px;
+		}
+		  /*PAGINA contactos*/
+		.col img {
+		  width: 80%;
+		}
+		
+		  }
+
+
+
+
+
+
 
 
