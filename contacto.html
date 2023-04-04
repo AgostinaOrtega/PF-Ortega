@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina Oficial de la escritora Argentina Ortega Agostina, autora de Verano Eterno">
+    <meta name="keywords" content="LIBRO, ESCRITORA, ESCRITURA, AUTORA ">
+    <title>AGOSTINA ORTEGA</title>
+
 <!--bootstrap style-->
 <link rel="stylesheet" href="./css/bootstrap.css">
     
@@ -13,10 +16,10 @@
 <!-- CSS STYLES -->
     <link rel="stylesheet" href="./css/style.css">
 
-<!-- mediaqueries -->
-  <link rel="stylesheet" href="./css/mediaqueries.css">
+<!-- ANIMACION -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>AGOSTINA ORTEGA</title>
+    
 </head>
 
 
@@ -74,16 +77,16 @@
 <!--FIN MENU-->
 
 <!-- INICIO CABECERA -->
-    <header class="cabecera">
-        <!--INICIO TITULO-->
-        <h1 id="titulo">AGOSTINA ORTEGA</h1>
-        <!--FIN TITULO-->
-        <!--INICIO IMAGEN DE PORTADA-->
-        <div class="portada">
-            <img src="./img/portadasinfondo.png" alt="portada"/>
-        </div>
-        <!--FIN IMAGEN DE PORTADA-->
-    </header>  
+<header class="cabecera">
+  <!--INICIO TITULO-->
+  <h1 id="titulo">AGOSTINA ORTEGA</h1>
+  <!--FIN TITULO-->
+  <!--INICIO IMAGEN DE PORTADA-->
+  <div class="portada">
+      <img src="./img/portadasinfondo.png" alt="portada"/>
+  </div>
+  <!--FIN IMAGEN DE PORTADA-->
+</header>  
 <!-- FIN CABECERA -->
 
 
@@ -147,9 +150,17 @@
   </footer>
 <!--FIN FORMULARIO SUBSCRIPCION-->
 
-    <a href="#titulo">
-    <img class="irarriba" src="./img/flecha-removebg-preview.png" alt="subir"/></a>
-
+<div data-aos= "fade-up" data-aos-delay="5" data-aos-offset="20" data-aos-duration="1500" >
+  <a href="#titulo">
+    <img class="irarriba" src="./img/flecha-removebg-preview.png" alt="subir" width="10%"/></a>
+</div>
+   
 
 </body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </html>

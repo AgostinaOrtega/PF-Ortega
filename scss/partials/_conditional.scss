@@ -1,0 +1,12 @@
+$temporada: 'summer';
+
+@if ($temporada == 'summer') {
+  .body {
+    background-color: #fefac0;
+  }
+}
+@else if ($temporada == 'winter') {
+  .body {
+    background-color: #8c8ad8;
+  }
+}

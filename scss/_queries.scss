@@ -1,0 +1,140 @@
+/*media queries*/
+
+/*GENERICOS - TODAS LAS PAGINAS*/
+
+       /*CABECERA*/
+
+	   @media (max-width:1000px)
+	   {
+    
+		  
+		  h1{
+			font-size: 30px; 
+		   padding: 30px;
+		   text-align: center;
+			
+		  }
+			  
+		.portada{
+			display: none;
+			
+		  }
+		
+			/*REDES DE TODAS LAS PAGINAS*/
+		
+		div .social img {
+		  width: 80px;
+		}
+		
+		
+		/*FORMULARIO SUSCRIPCION*/
+		.suscripcion label {
+		  font-size: 1.2em;
+		  text-align: center;
+		
+		}
+		
+		footer{
+		  display:flex ;
+		  justify-content: center;
+			margin: 50px;
+			font-size: 1.2em;
+			text-align: center;
+		}
+		
+		
+		 /*PAGINA INDEX*/
+		
+			/*PRESENTACION*/
+		
+			main{
+				margin: 1px;
+				padding: 1px;
+				
+			  }
+			  
+		  h2{
+			  font-size: 1em;}
+		  
+		  main img {
+			width: 40%;
+		  }
+		  
+		   /*frases libros*/
+		.carousel-item img {
+		  width: 80%;
+		}
+		
+		/*IMAGENES DE LIBROS*/
+		
+		h3{
+			font-size: 1.2em;
+		
+			}
+
+		.imglibros {
+				width: 60%;
+			}
+		
+		/*ULTIMAS NOTICIAS*/
+		.noticias  {
+			border: dashed 2px;
+			margin-top: 40px;
+			margin-left: 2px;
+			margin-right: 2px;
+			background-color: white;
+			width: 94%;
+		}
+		
+		.imagenn {
+			display: flex;
+			justify-content: center;
+			width: 40%;
+		}
+		  
+			 /*PAGINA SOBRE MI*/
+		
+		.fotomia {
+			width: 25%;
+		
+		   }
+		
+		.sobremi{
+		
+			text-align: end;
+			font-size: 10px;
+		   }
+		
+		.todosobremi{
+			width: 300px;
+		}
+		
+		/*PAGINA MIS LIBROS*/
+		
+		.containerlibros {  
+			border: dashed 2px;
+			margin: 5px;
+		  }
+		  
+		.titulolibro { 
+			font-size: 30px;
+			padding: 5px;
+		  text-align: left;
+		  }
+		
+		  
+		.fotolibros img { 
+		width: 300px;
+		  }
+		  
+		.sinopsislibros { 
+			font-size: 10px;
+			padding-right: 5px;
+		  padding-bottom: 5px;
+		}
+		  /*PAGINA contactos*/
+		.col img {
+		  width: 80%;
+		}
+		
+		  }

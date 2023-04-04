@@ -52,4 +52,9 @@ $RECYCLE.BIN/
 # Bootstrap
 *.bootstrap-5.2.3-dist
 
+# Backup-css
+*.backup-css
+
+
+
 # End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode

@@ -1,0 +1,256 @@
+@import "_queries";
+
+@import "./partials/conditional";
+
+/*GENERAL*/
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  }
+  
+  /*GENERICOS - TODAS LAS PAGINAS*/
+  /*BODY*/
+  
+  body {
+	background: #fefac0;
+  }
+
+  /*CABECERA*/
+  
+  header {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 100%;
+	background-color: white;
+  }
+  
+  h1 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-family: "Amatic SC", cursive;
+	font-size: 5.5em;
+  }
+  
+  .portada {
+	margin: 3px 1px 3px 280px;
+	align-items: center;
+  }
+  
+  /*PRESENTACION*/
+  
+  main {
+	margin: 20px;
+	padding: 20px;
+	background-color: white;
+  }
+  
+  .presentacion {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	border: dashed 1px;
+	padding: 20px;
+  }
+  
+  h2 {
+	font-family: "Amatic SC", cursive;
+	font-size: 1.6em;
+	padding: 30px;
+  }
+  
+  /*REDES DE TODAS LAS PAGINAS*/
+  
+  .redes {
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+  }
+  
+  .misredes {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  }
+  
+  /*FORMULARIO SUSCRIPCION*/
+  
+  footer {
+	margin: 50px;
+	font-family: Helvetica cursive;
+	font-size: 1.4em;
+	text-align: center;
+  }
+  
+  /*PAGINA INDEX*/
+  /*FRASES DE LIBROS*/
+  
+  .frases {
+	background-color: #f5e187;
+	margin: 10%;
+  }
+  
+  /*IMAGENES DE LIBROS*/
+  
+  h3 {
+	font-family: "Amatic SC", cursive;
+	font-size: 1.8em;
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  /*ULTIMAS NOTICIAS*/
+  
+  .noticias {
+	border: dashed 2px;
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	background-color: white;
+	width: 94%;
+  }
+  
+  .novedades {
+	font-size: 1.8em;
+	padding: 5px;
+  }
+  
+  .nuevo {
+	font-size: 1.4em;
+	padding: 5px;
+	color: red;
+  }
+  
+  .sinopsis {
+	font-size: 1.4em;
+	padding: 5px;
+  }
+  
+  .imagenn {
+	padding: 20px;
+	width: 90%;
+  }
+  
+  .btn-custom a {
+	text-decoration: none;
+  }
+  
+  .irarriba {
+	display: flex;
+	justify-content: center;
+  }
+  
+  /*PAGINA SOBRE MI*/
+  
+  .sobremi {
+	border: dashed 3px;
+	background-color: white;
+	margin: 10px;
+	width: 90%;
+  }
+  
+  .fotomia {
+	margin: 10px;
+  }
+  
+  .mipresentacion {
+	font-family: sans-serif;
+	font-size: 1.8em;
+	margin: 5%;
+	padding: 5px;
+  }
+  
+  .todosobremi {
+	display: block;
+	margin: auto;
+	width: 700px;
+  }
+  
+  /*PAGINA MIS LIBROS*/
+  
+  .containerlibros {
+	display: grid;
+	grid-template-columns: 1.3fr 0.7fr 1fr;
+	grid-template-rows: 0.5fr 1.5fr 1.4fr 0.6fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas: "titulolibro titulolibro titulolibro" "fotolibros sinopsislibros sinopsislibros" "fotolibros sinopsislibros sinopsislibros" "vermas vermas vermas";
+	border: dashed 3px;
+	margin: 30px;
+	background-color: white;
+  }
+  
+  .titulolibro {
+	grid-area: titulolibro;
+	font-family: sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	padding: 10px;
+  }
+  
+  .fotolibros {
+	grid-area: fotolibros;
+  }
+  
+  .sinopsislibros {
+	grid-area: sinopsislibros;
+	font-family: Helvetica;
+	font-size: 25px;
+	padding-right: 40px;
+  }
+  
+  .vermas {
+	grid-area: vermas;
+  }
+  
+  /*PRENSA*/
+  
+  .prensa {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+  
+	:hover {
+	  filter: grayscale(80%);
+	}
+  }
+  
+  /*PAGINA RESEÑAS*/
+  
+  .reseña :hover {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	box-shadow: 0px 0px 15px 15px #96897f;
+	-webkit-box-shadow: 0px 0px 15px 15px #a08979;
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+  }
+  
+  .col {
+	padding: 5px;
+  }
+  
+  /*PAGINA contactos*/
+  
+  form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 30px;
+  }
+  
+  label {
+	font-size: 30px;
+  }
+  
+  .comentariodatos {
+	padding: 20px;
+  }
+  
