@@ -15,9 +15,9 @@
   /*GENERICOS - TODAS LAS PAGINAS*/
   /*BODY*/
   
-  body {
+  /*body {
 	background: #fefac0;
-  }
+  }*/
 
   /*CABECERA*/
   
@@ -253,4 +253,34 @@
   .comentariodatos {
 	padding: 20px;
   }
+
+  .col img {
+    width: 80%;
+  }
+
+  .comentario {
+    border: dashed 3px;
+    background-color: rgb(243, 243, 131) ;
+    margin: 10px;
+  }
+
+  .bordetext {
+    display: flex;
+    justify-content: center;
+  }
+
+  textarea {
+   
+    width: 500%;
+    height: 200px;
+
+}
   
+/*PAGINAS CON IFRAME*/
+
+.youtubeveranoeterno {
+	display: flex;
+	justify-content: center;
+  
+}
+

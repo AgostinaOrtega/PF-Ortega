@@ -1,4 +1,7 @@
 @charset "UTF-8";
+
+@import "./partials/conditional";
+
 /*media queries*/
 /*GENERICOS - TODAS LAS PAGINAS*/
 /*CABECERA*/
@@ -66,9 +69,10 @@
   }
   /*PAGINA SOBRE MI*/
   .fotomia {
-    width: 50%;
+    width: 25%;
   }
   .sobremi {
+    text-align: end;
     font-size: 10px;
   }
   .todosobremi {
@@ -85,7 +89,7 @@
     text-align: left;
   }
   .fotolibros img {
-    width: 100px;
+    width: 300px;
   }
   .sinopsislibros {
     font-size: 10px;
@@ -96,9 +100,6 @@
   .col img {
     width: 80%;
   }
-}
-.body {
-  background-color: blue;
 }
 
 /*GENERAL*/
@@ -334,4 +335,34 @@ label {
 
 .comentariodatos {
   padding: 20px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.col img {
+  width: 80%;
+}
+
+.comentario {
+  border: dashed 3px;
+  background-color: rgb(243, 243, 131) ;
+  margin: 30px;
+}
+
+.bordetext {
+  display: flex;
+  justify-content: center;
+}
+
+textarea {
+ 
+  width: 800%;
+  height: 100px;
+
+
+}
+
+/*# sourceMappingURL=style.css.map */
+iframe {
+	display: flex;
+	justify-content: center;
+  
+}
